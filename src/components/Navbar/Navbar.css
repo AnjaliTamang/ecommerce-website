@@ -1,0 +1,132 @@
+
+.navbar{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .logo{
+    margin-left: -9px;
+    width: 175px;
+  }
+  .navbar-menu a,
+  .navbar-menu .active {
+      text-decoration: none; 
+      color: inherit; 
+  }
+  .navbar-menu{
+    display: flex;
+     list-style-type: none;
+     align-items: center;
+     gap: 20px;
+     color: #49557e;
+     font-size: 18px;
+  }
+  .navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .navbar-right img {
+    max-width: 100%;
+    height: auto;
+  }
+  .navbar-button{
+background: transparent;
+font-size: 16px;
+color: #49557e;
+border: 1px solid tomato;
+padding: 10px 30px;
+border-radius: 50px;
+cursor: pointer;
+transition: 0.3s;
+  }
+
+  .navbar button:hover{
+    background-color: #fff4f2;
+  }
+
+  .navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+
+  .navbar li{
+    cursor: pointer;
+  }
+
+  .navbar-search-icon{
+    position: relative;
+  }
+
+  .navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+  }
+
+  @media(max-width:1050px){
+    .navbar .logo{
+      width: 165px;
+    }
+    .navbar-menu{
+      gap: 20px;
+      font-size: 16px;
+    }
+    .navbar-right{
+      gap: 18px;
+    }
+    .navbar-right img{
+      width: 19px;
+    }
+    .navbar-right button{
+      padding: 8px 25px;
+    }
+  }
+  @media(max-width:900px){
+    .navbar{
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    .navbar .logo{
+      width: 120px;
+      padding-bottom: 10px;
+    }
+    .navbar-menu{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      font-size: 13px;
+      padding-right: 19px;
+    }
+
+    .navbar-right{
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding-bottom: 12px;
+    }
+    .navbar-right img{
+      width: 14px;
+    }
+    .navbar-right button{
+      padding: 5px 11px;
+      font-size: 13px;
+    }
+  }
+  @media(max-width:750px){
+    .navbar .logo{
+      width: 140px;
+    }
+    .navbar-menu{
+      display: none;
+    }
+    .navbar-right img{
+      width: 16px;
+    }
+  }
+  
